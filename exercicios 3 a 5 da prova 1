@@ -1,0 +1,31 @@
+// Exercicio 3 da prova 1
+
+// Importar bibliotecas
+#include <stdio.h>
+#include<iostream>
+
+int main() {
+    double fahrenheit_double = 843; // Usando 843 como entrada
+    int fahrenheit_int = 843;        // Usando 843 como entrada
+
+    // Nome e informações do aluno
+    printf("Nome: _____________________________________________\n");
+    printf("RA: 843\n"); // RA
+    printf("Curso: _____________________________________________\n");
+    printf("Data: _____________________________________________\n");
+    printf("Nota: ______________________________________________\n");
+    printf("Disciplina: Algoritmos e Robótica - T\n");
+
+    // Conversão de Fahrenheit (double) para Celsius
+    double celsius_from_double = (fahrenheit_double - 32.0) * 5.0 / 9.0;
+    printf("Valor em Fahrenheit (double): %.2lf\n", fahrenheit_double);
+    printf("O valor correspondente em Celsius (double) é: %.2lf\n", celsius_from_double);
+
+    // Conversão de Fahrenheit (int) para Celsius
+    double celsius_from_int = (fahrenheit_int - 32) * 5.0 / 9.0; // Usando 5.0 para evitar divisão inteira
+    printf("Valor em Fahrenheit (int): %d\n", fahrenheit_int);
+    printf("O valor correspondente em Celsius (int) é: %.2lf\n", celsius_from_int);
+
+    return 0;
+}
+ 
